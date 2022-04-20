@@ -20,7 +20,6 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.backgroundColor = .systemBlue
         navigationController?.navigationBar.tintColor = .white
-        
         updateViews()
     }
     
@@ -38,7 +37,6 @@ class DetailViewController: UIViewController {
     }
     
     func formatDate(initialDate: String) -> String {
-        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-m-dd"
         let dateObj = dateFormatter.date(from: initialDate)

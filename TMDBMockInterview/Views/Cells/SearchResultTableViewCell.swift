@@ -27,12 +27,8 @@ class SearchResultTableViewCell: UITableViewCell {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let dateObj = dateFormatter.date(from: initialDate)
-        
         dateFormatter.dateFormat = "MMMM d, yyyy"
-        guard let dateObj = dateObj else {
-            return ""
-        }
-
+        guard let dateObj = dateObj else { return "" }
         return dateFormatter.string(from: dateObj)
     }
 }
